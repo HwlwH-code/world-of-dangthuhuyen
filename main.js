@@ -156,7 +156,7 @@ class Tulip {
 
         if(this.currentImage === truongthanhImage){
             this.time += deltaTime;
-            this.frame = Math.floor(this.time / 50);
+            this.frame = Math.floor(this.time / 48);
             if (this.frame >= this.currentMaxFrame){
 
                 this.currentImage = duduaNo1Image;
@@ -171,7 +171,7 @@ class Tulip {
 
             if (this.frame >= 1) {  
                 this.time += deltaTime;
-                this.frame = Math.floor(this.time / 50);
+                this.frame = Math.floor(this.time / 48);
                 if (this.frame >= this.currentMaxFrame) {
                     this.currentImage = duduaNo2Image;
                     this.currentMaxFrame = this.maxFrameDuDuaNo2;
@@ -185,7 +185,7 @@ class Tulip {
 
         } else {
             this.time += deltaTime;
-            this.frame = Math.floor(this.time / 50);
+            this.frame = Math.floor(this.time / 48);
             if (this.frame >= this.currentMaxFrame) {
                 this.time = 0;
                 this.frame = 0;
@@ -253,7 +253,7 @@ function animate(timestamp){
     lastTime = timestamp;
 
     sharedTime += deltaTime;
-    sharedFrame = Math.floor(sharedTime / 50);
+    sharedFrame = Math.floor(sharedTime / 48);
     if (sharedFrame >= 53){
         sharedFrame = 0;
         sharedTime = 0;
